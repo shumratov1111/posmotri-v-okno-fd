@@ -1,1 +1,1 @@
-https://github.com/shumratov1111/posmotri-v-okno-fd/tree/main#
+https://github.com/shumratov1111/posmotri-v-okno-fd
