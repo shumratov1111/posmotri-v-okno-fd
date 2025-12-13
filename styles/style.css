@@ -107,6 +107,8 @@ ol {
 .search-form__label {
   display: flex;
   gap: 5px;
+  outline: none;
+  margin-top: 1px;
 }
 
 .search-form__label:hover {
@@ -117,18 +119,17 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #FFF;
-  outline-offset: 1px;
 }
 
 .search-form__pseudo-checkbox {
   inline-size: 19px;
   block-size: 19px;
   border: 1px solid #FFF;
+  margin-top: 1px;
 }
 
 .search-form__label-text {
   cursor: pointer;
-  margin-bottom: 5px;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -205,7 +206,10 @@ ol {
   line-height: 16.2px;
   letter-spacing: 0%;
   margin-top: 6px;
-  
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 199px;
 }
 
 .content__list {
@@ -295,6 +299,10 @@ button:focus-visible {
 }
 
 .search-form__submit-button {
+  padding: 6px 73px;
+}
+
+.search-form__submit-button:focus {
   padding: 6px 73px;
 }
 
