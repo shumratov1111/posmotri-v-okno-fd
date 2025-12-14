@@ -68,7 +68,7 @@ ol {
 .search-form__textfield {
   font-family: 'Fira Sans Condensed', sans-serif ;
   font-weight: 400;
-  font-style: regular;
+  font-style: normal;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
@@ -81,6 +81,7 @@ ol {
   width: 225px;
   height: 27px;
   appearance: none;
+  outline: none;
 }
 
 .search-form__textfield:has(:focus-visible) {
@@ -132,12 +133,13 @@ ol {
   cursor: pointer;
 }
 
-.search-form__pseudo-checkbox::after {
-  content: " ";
-}
-
-.search-form__checkbox:checked {
-  opacity: 1;
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: '';
+  display: block;
+  background-color: #FFF;
+  inline-size: 15px;
+  block-size: 15px;
+  margin: 1px 0 0 1px;
 }
 
 .search-form__fieldset-title {
@@ -199,9 +201,9 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed' Arial, sans-serif;
   font-weight: 400;
-  font-style: Regular;
+  font-style: normal;
   font-size: 18px;
   line-height: 16.2px;
   letter-spacing: 0%;
@@ -268,7 +270,7 @@ ol {
 }
 
 .button {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-style: Bold;
   font-size: 18px;
